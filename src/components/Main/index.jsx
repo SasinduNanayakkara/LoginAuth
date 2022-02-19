@@ -20,7 +20,7 @@ const Main = () => {
     const handleChange = () => {
 
     };
-    
+
     const handleLogout = () => {
         localStorage.removeItem("token");
         window.location.reload();
@@ -34,7 +34,7 @@ const Main = () => {
         </div>
         
         <div className={styles.right}>
-                <form className={styles.form_container} onSubmit={handleSubmit}>
+                <form className={styles.form_container}>
                     <h1>Create Account</h1>
                     <input
                         type="text"
@@ -71,8 +71,6 @@ const Main = () => {
                         value={user.password}
                         required
                         className={styles.input} />
-
-                    {error && <div className={styles.error_msg}>{error}</div>}
                     <button type="submit" className={styles.green_btn}>
                         Sign Up
                     </button>
