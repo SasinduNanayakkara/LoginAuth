@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from"./styles.module.css"
 
 
-const apiUrl = "http://localhost:5000/";
+const apiUrl = "http://localhost:5000";
 const Main = () => {
 
     const updateUser = (id, data) => {
